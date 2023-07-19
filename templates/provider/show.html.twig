@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Proveedor{% endblock %}
+
+{% block body %}
+
+  <div class="container content">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>Información del Proveedor</h2>
+
+        <table class="table table-striped mt-5 mb-5">
+          <tbody>
+            <tr>
+              <th width="15%">ID</th>
+              <td>{{ provider.id }}</td>
+            </tr>
+            <tr>
+              <th>Nombre</th>
+              <td>{{ provider.name }}</td>
+            </tr>
+            <tr>
+              <th>RFC</th>
+              <td>{{ provider.rfc }}</td>
+            </tr>
+            <tr>
+              <th>Dirección</th>
+              <td>{{ provider.adresse }}</td>
+            </tr>
+            <tr>
+              <th>Código Postal</th>
+              <td>{{ provider.cp }}</td>
+            </tr>
+            <tr>
+              <th>Estado</th>
+              <td>{{ state }}</td>
+            </tr>
+            <tr>
+              <th>Ciudad</th>
+              <td>{{ city }}</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+        <a class="btn btn-success" href="{{ path('app_provider_edit', {'id': provider.id}) }}">Editar</a>
+
+        {{ include('provider/_delete_form.html.twig') }}
+
+        <a class="btn btn-primary" href="{{ path('app_provider_index') }}">Volver a la lista</a>
+
+      </div>
+    </div>
+  </div>
+{% endblock %}

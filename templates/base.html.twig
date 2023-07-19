@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>{% block title %}SnowTricks{% endblock %}</title>
+    {% include "core/head.html.twig" %}
+    
+    {% block metas %}
+    <meta name="description" content="API Demo" />
+    <meta name="author" content="Siaka MANSALY" />
+    {% endblock %}
+
+    {% block stylesheets %}
+    {% endblock %}
+    {% block swagger %}
+    {% endblock %}
+    {% block javascripts %}
+    {% endblock %}
+
+</head>
+
+<body data-spy="scroll" data-target="#mainNav" data-offset="100" id="page-top">
+    {% include "core/navbar.html.twig" %}
+    {% block body %}{% endblock %}
+    {% include "core/footer.html.twig" %}
+</body>
+
+</html>

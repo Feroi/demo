@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Editar Proveedor{% endblock %}
+
+{% block body %}
+  <div class="container content">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="mb-4">Editar Proveedor</h2>
+
+        {{ include('provider/_form.html.twig', {'button_label': 'Actualizar'}) }}
+
+        {{ include('provider/_delete_form.html.twig') }}
+
+        <a class="btn btn-primary" href="{{ path('app_provider_index') }}">Volver a la lista</a>
+
+      </div>
+    </div>
+  </div>
+{% endblock %}

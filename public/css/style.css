@@ -1,0 +1,72 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+    font-weight: 400;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.text-blue {
+    color: #288690;
+}
+
+.bg-blue {
+    background: #288690;
+}
+
+section.models {
+    display: none;
+}
+
+.navbar-nav>li {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    color: #fff;
+}
+
+.btn-blue {
+    background: #288690;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover,
+.btn-blue:hover {
+    background-color: #50e3c2;
+    color: #000;
+}
+
+pre {
+    overflow: hidden;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.content{
+    min-height:800px;
+}
