@@ -80,4 +80,4 @@ To get a local copy up and running follow these simple example steps :
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-Demo link : http://test.stage-netsocialweb.com
+Demo link : http://demo.stage-netsocialweb.com
